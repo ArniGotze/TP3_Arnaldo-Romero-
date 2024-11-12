@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #6c63ff;
+    color: white;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.welcome-text {
+    font-size: 24px;
+    color: #FFD700;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.animated-image {
+    width: 300px; /* Ajusta según tu imagen */
+    height: auto;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #a80c26; /* Cambia el color al pasar el mouse */
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+}
+
+.button:active {
+    background-color: #f1ee28; /* Color diferente al presionar */
+}
+
+.description {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #171286;
+    color: white;
+}

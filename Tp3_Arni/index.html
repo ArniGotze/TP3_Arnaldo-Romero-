@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <h2 class="welcome-text">¡Explora nuestro contenido!</h2>
+    </header>
+    
+    <section class="main-content">
+        <img src="gif de auto.jfif" alt="Imagen en movimiento" class="animated-image">
+        
+        <nav>
+            <a href="pagina1.html" class="button">Página 1</a>
+            <a href="pagina2.html" class="button">Página 2</a>
+           
+        </nav>
+        
+        <div class="description">
+            <p><strong>Página 1:</strong> En esta seccion encontraras informacion de los autos, como las marcas,modelos el año y el precio.</p>
+            <p><strong>Página 2:</strong> Aqui podras ver la imagen del los vehiculos .</p>
+            
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Arnaldo Romero </p>
+    </footer>
+    
+    <script>
+        // Animación del texto de bienvenida
+        const welcomeText = document.querySelector('.welcome-text');
+        let index = 0;
+        const text = "¡Explora nuestro contenido!";
+        
+        function animateText() {
+            if (index < text.length) {
+                welcomeText.textContent += text.charAt(index);
+                index++;
+                setTimeout(animateText, 100); // Cambiar la velocidad de la animación aquí
+            }
+        }
+        animateText();
+    </script>
+</body>
+</html>
